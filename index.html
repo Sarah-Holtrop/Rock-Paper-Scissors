@@ -6,21 +6,33 @@
 	<title>Rock Paper Scissors</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+		integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 	<!--write html below this line-->
 	<div class="container">
+		<div class="row rps-background"></div>
 		<div class="row">
 			<div class="col text-center">
-				<h1>ROCK PAPER SCISSORS</h1>
+				<h1 class="text-info">ROCK <i class="fas fa-hand-rock text-dark"></i> PAPER <i
+						class="fas fa-hand-paper text-dark"></i>
+					SCISSORS <i class="fas fa-hand-scissors text-dark"></i></h1>
 				<button class="btn btn-secondary" onclick="play('rock')">Rock</button>
 				<button class="btn btn-light" onclick="play('paper')">Paper</button>
 				<button class="btn btn-dark" onclick="play('scissors')">Scissors</button>
-				<h3> Player 1 played: <span id="player-rps"></span> </h3>
-				<h3>Computer played: <span id="computer-rps"></span></h3>
+				<h3 class="text-info"> Player 1 played: <span id="player-rps"></span> </h3>
+				<h3 class="text-danger">Computer played: <span id="computer-rps"></span></h3>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col text-center">
+				<h3><span id="game-result"></span></h3>
+			</div>
+		</div>
+
 	</div>
 
 	<!--write html above this line-->

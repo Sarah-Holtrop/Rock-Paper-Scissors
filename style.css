@@ -1,0 +1,6 @@
+.rps-background {
+  background-image: url("https://cdn-images-1.medium.com/max/1200/0*CtoUAxqGUbzzzc9W.png");
+  height: 25vh;
+  background-repeat: inherit;
+  background-size: contain;
+}
